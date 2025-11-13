@@ -144,6 +144,22 @@
       box-shadow: 0 0 10px #00FFFF;
     }
 
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: #FFFFFF;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      transition: 0.3s;
+    }
+
+    .hamburger:hover {
+      color: #00FFFF;
+    }
+
     /* Main Container */
     .container {
       display: flex;
@@ -384,7 +400,34 @@
       }
 
       nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(13, 13, 13, 0.95);
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 0;
         display: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      nav ul li {
+        text-align: center;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 1rem;
+        border: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      nav ul.open {
+        display: flex;
       }
     }
   </style>
@@ -401,7 +444,8 @@
 
   <nav>
     <div class="logo">LEOMAR DAVE U. SUMAGA</div>
-    <ul>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul id="nav-menu">
       <li><a href="#" class="active" data-tab="home">Home</a></li>
       <li><a href="#" data-tab="info">Info</a></li>
       <li><a href="#" data-tab="contact">Contact</a></li>
@@ -468,6 +512,8 @@
   <script>
     const tabs = document.querySelectorAll('.tab-content');
     const navLinks = document.querySelectorAll('nav ul li a');
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
 
     navLinks.forEach(link => {
       link.addEventListener('click', (e) => {
@@ -476,31 +522,4 @@
         tabs.forEach(tab => tab.classList.remove('active'));
         navLinks.forEach(l => l.classList.remove('active'));
         document.getElementById(targetTab).classList.add('active');
-        link.classList.add('active');
-      });
-    });
-
-    // Slideshow functionality
-    const slides = document.querySelectorAll('.photo-oval img');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-          slide.classList.add('active');
-        }
-      });
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    // Start slideshow
-    setInterval(nextSlide, 3000); // Change slide every 3 seconds
-  </script>
-</body>
-
-</html>
+        link.classList.add('active
