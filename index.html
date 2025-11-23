@@ -31,31 +31,32 @@
 
   <div class="container">
     <div class="portfolio-box">
-      <!-- Home Tab -->
+      
       <div id="home" class="tab-content active">
         <div class="home-content">
           <div class="text-block">
             <div class="portfolio-label">PORTFOLIO</div>
-            <div class="name">LEOMAR DAVE U. SUMAGA</div>
-            <div class="subtitle">INFORMATION TECHNOLOGY STUDENT</div>
-            <div class="tagline">"Exploring the world of technology with creativity and innovation."</div>
-            <!-- Header: Welcome message with title, motto/tagline, and philosophy -->
-            <div class="header-section">
-              <h2>Welcome to My Digital World</h2>
-              <p class="motto">"Code with Purpose, Create with Passion."</p>
-              <p class="philosophy">My philosophy is simple: Technology should empower people, not complicate them. I strive to build solutions that are intuitive, efficient, and impactful, blending art and logic to solve real-world problems.</p>
+            
+            <div class="glitch-wrapper">
+              <h1 class="glitch" data-text="LEOMAR DAVE U. SUMAGA">LEOMAR DAVE U. SUMAGA</h1>
             </div>
-            <!-- Main Content Area: Introduction, Hobbies, Achievements -->
-            <div class="main-content">
-              <div class="introduction">
-                
-                <h3>Introduction</h3>
-                <p>Hello! I am Leomar Dave U. Sumaga, an aspiring IT student with a passion for web development, programming, and digital design. My goal is to build modern and efficient systems that make technology accessible and meaningful.</p>
-              </div>
+
+            <div class="typewriter-container">
+              <div class="subtitle typewriter">INFORMATION TECHNOLOGY STUDENT</div>
+            </div>
+
+            <div class="tagline">"Exploring the world of technology with creativity and innovation."</div>
+            
+            <div class="header-section">
+              <p class="motto">"Code with Purpose, Create with Passion."</p>
+              <p class="philosophy">My philosophy is simple: Technology should empower people. I blend art and logic to solve real-world problems.</p>
+              
+              <a href="#" class="neon-button" onclick="document.querySelector('[data-tab=\'contact\']').click()">Let's Connect</a>
             </div>
           </div>
+
           <div class="photo-container">
-            <div class="photo-oval">
+            <div class="photo-oval pulsing-border">
               <img src="leomar.jpeg" alt="Leomar Dave U. Sumaga - Slide 1" class="active" />
               <img src="leomar1.jpeg" alt="Leomar Dave U. Sumaga - Slide 2" />
               <img src="leomar2.jpeg" alt="Leomar Dave U. Sumaga - Slide 3" />
@@ -67,23 +68,45 @@
         </div>
       </div>
 
-      <!-- Info Tab -->
       <div id="info" class="tab-content">
         <div class="info-content">
           <h2>ABOUT ME</h2>
-          <p>I am an aspiring IT student passionate about web development, programming, and digital design. My goal is to build modern and efficient systems that make technology accessible and meaningful.</p>
-          <div class="hobbies">
-                <h3>Hobbies</h3>
-                <p>In my free time, I enjoy playing competitive online games, which sharpen my strategic thinking and teamwork skills. I also love reading manwhua and manhua, diving into exciting stories that inspire my imagination and creativity.</p>
-              </div>
-              <div class="achievements">
-                <h3>Achievements</h3>
-                <p>Throughout my academic journey, I've achieved recognition in coding competitions and have successfully completed several personal projects, including responsive websites and graphic designs. I'm proud to have been part of school events where my skills in video editing and photography were showcased.</p>
-              </div>
+          <p class="intro-text">
+            I am an aspiring IT student passionate about web development, programming, and digital design. My goal is to build modern and efficient systems that make technology accessible and meaningful.
+          </p>
+
+          <div class="info-grid">
+            <div class="glass-card">
+              <div class="card-icon">🎮</div>
+              <h3>Hobbies</h3>
+              <ul class="fun-list">
+                <li><strong>Gaming:</strong> Sharpening strategy & teamwork</li>
+                <li><strong>Reading:</strong> Manwhua/Manhua for creativity</li>
+                <li><strong>Tech:</strong> Exploring new frameworks</li>
+              </ul>
+            </div>
+
+            <div class="glass-card">
+              <div class="card-icon">🏆</div>
+              <h3>Achievements</h3>
+              <ul class="fun-list">
+                <li><strong>Coding:</strong> Competed in school hackathons</li>
+                <li><strong>Projects:</strong> Built responsive web layouts</li>
+                <li><strong>Creative:</strong> Event video editing & photography</li>
+              </ul>
+            </div>
+
+            <div class="glass-card full-width">
+              <div class="card-icon">⚡</div>
+              <h3>My Vision</h3>
+              <p style="margin:0; font-size: 0.95rem; color:#ccc;">
+                I believe the future is written in code. I want to be one of the authors, creating tools that bridge the gap between human creativity and machine efficiency.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Skills Tab -->
       <div id="skills" class="tab-content">
         <div class="skills-content">
           <h2>MY SKILLS</h2>
@@ -97,7 +120,6 @@
             <div class="skill">💡 Creative Thinking</div>
           </div>
 
-          <!-- Sample works gallery -->
           <div class="sample-works">
             <h3>Sample Works</h3>
             <div class="work-list">
@@ -132,7 +154,6 @@
         </div>
       </div>
 
-      <!-- Education Tab -->
       <div id="education" class="tab-content">
         <div class="education-content">
           <h2>MY EDUCATION</h2>
@@ -156,7 +177,6 @@
         </div>
       </div>
 
-      <!-- Contact Tab -->
       <div id="contact" class="tab-content">
         <div class="contact-content neon-contact">
           <h2 class="contact-title">CONTACT ME</h2>
@@ -172,7 +192,6 @@
     </div>
   </div>
 
-  <!-- Updated Footer: Includes name, course, and design note -->
   <footer>© 2025 Leomar Dave U. Sumaga | Bachelor of Information Technology | Designed with passion and code.</footer>
 
   <script>
@@ -209,8 +228,7 @@
     }
 
     // Start slideshow
-    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    setInterval(nextSlide, 3000); 
   </script>
 </body>
-
 </html>
