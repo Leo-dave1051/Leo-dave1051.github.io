@@ -2,233 +2,1098 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio - LEOMAR DAVE U. SUMAGA</title>
-  <meta name="description" content="Portfolio of Leomar Dave U. Sumaga, an aspiring IT student passionate about coding, design, and innovative tech." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leomar Dave U. Sumaga | Portfolio</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Leomar Dave U. Sumaga, BSIT student and aspiring software and web developer."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="particles">
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-  </div>
 
-  <nav>
-    <div class="logo">LEOMAR DAVE U. SUMAGA</div>
-    <ul>
-      <li><a href="#" class="active" data-tab="home">Home</a></li>
-      <li><a href="#" data-tab="info">Info</a></li>
-      <li><a href="#" data-tab="skills">Skills</a></li>
-      <li><a href="#" data-tab="education">Education</a></li>
-      <li><a href="#" data-tab="contact">Contact</a></li>
+  <!-- BACKGROUND -->
+  <div class="background-grid"></div>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+
+    <div class="nav-logo">
+      <div class="logo-mark">◆</div>
+      <span>LEOMAR DAVE U. SUMAGA</span>
+    </div>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="#" class="active" data-tab="home">Home</a>
+      </li>
+
+      <li>
+        <a href="#" data-tab="about">About</a>
+      </li>
+
+      <li>
+        <a href="#" data-tab="skills">Skills</a>
+      </li>
+
+      <li>
+        <a href="#" data-tab="projects">Projects</a>
+      </li>
+
+      <li>
+        <a href="#" data-tab="certificates">Certificates</a>
+      </li>
+
+      <li>
+        <a href="#" data-tab="education">Education</a>
+      </li>
+
+      <li>
+        <a href="#" data-tab="achievements">Achievements</a>
+      </li>
+
+      <li>
+        <a href="#" data-tab="contact">Contact</a>
+      </li>
+
     </ul>
+
+    <button class="menu-button" aria-label="Open menu">
+      ☰
+    </button>
+
   </nav>
 
-  <div class="container">
-    <div class="portfolio-box">
-      
-      <div id="home" class="tab-content active">
-        <div class="home-content">
-          <div class="text-block">
-            <div class="portfolio-label">PORTFOLIO</div>
-            
-            <div class="glitch-wrapper">
-              <h1 class="glitch" data-text="LEOMAR DAVE U. SUMAGA">LEOMAR DAVE U. SUMAGA</h1>
-            </div>
 
-            <div class="typewriter-container">
-              <div class="subtitle typewriter">INFORMATION TECHNOLOGY STUDENT</div>
-            </div>
+  <!-- MAIN -->
+  <main class="main-container">
 
-            <div class="tagline">"Exploring the world of technology with creativity and innovation."</div>
-            
-            <div class="header-section">
-              <p class="motto">"Code with Purpose, Create with Passion."</p>
-              <p class="philosophy">My philosophy is simple: Technology should empower people. I blend art and logic to solve real-world problems.</p>
-              
-              <a href="#" class="neon-button" onclick="document.querySelector('[data-tab=\'contact\']').click()">Let's Connect</a>
-            </div>
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="tab-content active">
+
+      <div class="home-layout">
+
+        <div class="home-text">
+
+          <div class="section-badge">
+            BSIT STUDENT
           </div>
 
-          <div class="photo-container">
-            <div class="photo-oval pulsing-border">
-              <img src="leomar.jpeg" alt="Leomar Dave U. Sumaga - Slide 1" class="active" />
-              <img src="leomar1.jpeg" alt="Leomar Dave U. Sumaga - Slide 2" />
-              <img src="leomar2.jpeg" alt="Leomar Dave U. Sumaga - Slide 3" />
-              <img src="leomar3.jpeg" alt="Leomar Dave U. Sumaga - Slide 4" />
-              <img src="leomar4.jpeg" alt="Leomar Dave U. Sumaga - Slide 5" />
-              <div class="grid-lines"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <h1>
+            LEOMAR
+            <span>DAVE U.</span>
+            <br>
+            SUMAGA
+          </h1>
 
-      <div id="info" class="tab-content">
-        <div class="info-content">
-          <h2>ABOUT ME</h2>
-          <p class="intro-text">
-            I am an aspiring IT student passionate about web development, programming, and digital design. My goal is to build modern and efficient systems that make technology accessible and meaningful.
+          <h2>
+            Aspiring Software & Web Developer
+          </h2>
+
+          <p class="home-description">
+            Building practical digital solutions while exploring
+            programming, UI/UX, and modern web technologies.
           </p>
 
-          <div class="info-grid">
-            <div class="glass-card">
-              <div class="card-icon">🎮</div>
-              <h3>Hobbies</h3>
-              <ul class="fun-list">
-                <li><strong>Gaming:</strong> Sharpening strategy & teamwork</li>
-                <li><strong>Reading:</strong> Manwhua/Manhua for creativity</li>
-                <li><strong>Tech:</strong> Exploring new frameworks</li>
-              </ul>
-            </div>
+          <div class="home-buttons">
 
-            <div class="glass-card">
-              <div class="card-icon">🏆</div>
-              <h3>Achievements</h3>
-              <ul class="fun-list">
-                <li><strong>Coding:</strong> Competed in school hackathons</li>
-                <li><strong>Projects:</strong> Built responsive web layouts</li>
-                <li><strong>Creative:</strong> Event video editing & photography</li>
-              </ul>
-            </div>
+            <a href="#" class="btn btn-primary" data-tab-button="projects">
+              View Projects
+              <span>→</span>
+            </a>
 
-            <div class="glass-card full-width">
-              <div class="card-icon">⚡</div>
-              <h3>My Vision</h3>
-              <p style="margin:0; font-size: 0.95rem; color:#ccc;">
-                I believe the future is written in code. I want to be one of the authors, creating tools that bridge the gap between human creativity and machine efficiency.
-              </p>
-            </div>
+            <a href="resume.pdf" class="btn btn-outline" download>
+              ↓ Download Resume
+            </a>
+
           </div>
+
+          <div class="social-links">
+
+            <a href="https://github.com/Leo-dave1051"
+              target="_blank"
+              aria-label="GitHub">
+              GH
+            </a>
+
+            <a href="mailto:leomardavepogi@gmail.com"
+              aria-label="Email">
+              @
+            </a>
+
+            <a href="https://www.facebook.com/hzhsg.gaha"
+              target="_blank"
+              aria-label="Facebook">
+              f
+            </a>
+
+            <a href="https://www.instagram.com/leo.mis_u/"
+              target="_blank"
+              aria-label="Instagram">
+              ◎
+            </a>
+
+            <a href="#"
+              aria-label="Certificates"
+              data-tab-button="certificates">
+              ▣
+            </a>
+
+          </div>
+
         </div>
+
+
+        <!-- PROFILE IMAGE -->
+
+        <div class="home-photo-area">
+
+          <div class="photo-decoration decoration-one"></div>
+          <div class="photo-decoration decoration-two"></div>
+
+          <div class="profile-frame">
+
+            <div class="profile-image">
+
+              <img src="leomar.jpeg"
+                  class="active"
+                  alt="Leomar Dave U. Sumaga">
+
+              <img src="leomar1.jpeg"
+                  alt="Leomar Dave U. Sumaga">
+
+              <img src="leomar2.jpeg"
+                  alt="Leomar Dave U. Sumaga">
+
+              <img src="leomar3.jpeg"
+                  alt="Leomar Dave U. Sumaga">
+
+              <img src="leomar4.jpeg"
+                  alt="Leomar Dave U. Sumaga">
+
+            </div>
+
+          </div>
+
+          <div class="photo-label">
+            <span>Code</span>
+            <span>Create</span>
+            <span>Build</span>
+            <span>Grow</span>
+            <b>—</b>
+          </div>
+
+        </div>
+
       </div>
 
-      <div id="skills" class="tab-content">
-        <div class="skills-content">
-          <h2>MY SKILLS</h2>
-          <p>Here are some of the skills I've developed through my studies and personal projects. I'm always eager to learn more!</p>
-          <div class="skills">
-            <div class="skill">✂️ Editing</div>
-            <div class="skill">📸 Photography</div>
-            <div class="skill">🎥 Video Editing</div>
-            <div class="skill">🎨 Graphic Design</div>
-            <div class="skill">🛠️ Problem Solving</div>
-            <div class="skill">💡 Creative Thinking</div>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="tab-content">
+
+      <div class="about-layout">
+
+        <div class="about-main">
+
+          <div class="section-badge">
+            ABOUT ME
           </div>
 
-          <div class="sample-works">
-            <h3>Sample Works</h3>
-            <div class="work-list">
-              <div class="work-card">
-                <div class="work-thumb w1" aria-hidden="true"></div>
-                <div class="work-body">
-                  <h4>Responsive Portfolio</h4>
-                  <p>Mobile-first portfolio site built with HTML/CSS and light JS for interactions.</p>
-                  <a href="#" class="work-link" target="_blank" rel="noopener">View project</a>
-                </div>
+          <h2 class="page-title">
+            Turning Ideas Into
+            <span>Digital Solutions</span>
+          </h2>
+
+          <p class="large-text">
+            I'm a BSIT student passionate about web development,
+            programming, and digital design. I enjoy learning new
+            technologies, solving problems, and creating projects
+            that make an impact.
+          </p>
+
+          <div class="about-cards">
+
+            <div class="info-small-card">
+
+              <div class="card-icon">◆</div>
+
+              <div>
+                <small>EDUCATION</small>
+
+                <strong>
+                  Bachelor of Science in Information Technology
+                </strong>
+
+                <p>
+                  Bukidnon State University<br>
+                  2nd Year
+                </p>
               </div>
 
-              <div class="work-card">
-                <div class="work-thumb w2" aria-hidden="true"></div>
-                <div class="work-body">
-                  <h4>Photo Edit Collection</h4>
-                  <p>Photo retouch and color grading showcase demonstrating composition skills.</p>
-                  <a href="#" class="work-link" target="_blank" rel="noopener">View project</a>
-                </div>
+            </div>
+
+
+            <div class="info-small-card">
+
+              <div class="card-icon purple">◎</div>
+
+              <div>
+                <small>CURRENT FOCUS</small>
+
+                <strong>
+                  Web Development · Java · UI/UX
+                </strong>
+
+                <p>
+                  Database · Problem Solving
+                </p>
+
               </div>
 
-              <div class="work-card">
-                <div class="work-thumb w3" aria-hidden="true"></div>
-                <div class="work-body">
-                  <h4>UI Prototype</h4>
-                  <p>Interactive UI prototype highlighting navigation patterns and micro-interactions.</p>
-                  <a href="#" class="work-link" target="_blank" rel="noopener">View project</a>
-                </div>
-              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="about-profile-card">
+
+          <h3>A LITTLE MORE ABOUT ME</h3>
+
+          <div class="profile-detail">
+            <div class="detail-icon">♙</div>
+            <div>
+              <small>Age</small>
+              <strong>18</strong>
             </div>
           </div>
+
+          <div class="profile-detail">
+            <div class="detail-icon">⌖</div>
+            <div>
+              <small>Location</small>
+              <strong>Impasugong, Bukidnon</strong>
+            </div>
+          </div>
+
+          <div class="profile-detail">
+            <div class="detail-icon">🎮</div>
+            <div>
+              <small>Hobbies</small>
+              <strong>Gaming · Photography<br>Video Editing · Music</strong>
+            </div>
+          </div>
+
+          <div class="quote-box">
+            <span>"</span>
+            <p>
+              Code with purpose,<br>
+              create with passion.
+            </p>
+            <small>— Leomar Dave U. Sumaga</small>
+          </div>
+
         </div>
+
       </div>
 
-      <div id="education" class="tab-content">
-        <div class="education-content">
-          <h2>MY EDUCATION</h2>
-          <p>My academic journey has equipped me with a strong foundation in technology and creativity.</p>
-          <div class="education-details">
-            <div class="education-item">
-              <div class="education-icon">🏫</div>
-              <div class="education-text">
-                <h3>Junior High School (JHS)</h3>
-                <p>Impasugong National High School<br />Years: 2019-2023</p>
-              </div>
-            </div>
-            <div class="education-item">
-              <div class="education-icon">🎓</div>
-              <div class="education-text">
-                <h3>Senior High School (SHS)</h3>
-                <p>Bukidnon National High School<br />Years: 2023-2025</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="tab-content">
+
+      <div class="section-header">
+
+        <h2 class="page-title">
+          MY <span>SKILLS</span>
+        </h2>
+
+        <p>
+          Here are the skills I've developed through my studies
+          and personal projects. I'm always eager to learn more!
+        </p>
+
       </div>
 
-      <div id="contact" class="tab-content">
-        <div class="contact-content neon-contact">
-          <h2 class="contact-title">CONTACT ME</h2>
-          <ul class="contact-list">
-            <li>📧 <a href="mailto:leomardavepogi@gmail.com" target="_blank">leomardavepogi@gmail.com</a></li>
-            <li>📱 09552951805</li>
-            <li>📸 <a href="https://www.instagram.com/leo.mis_u/" target="_blank">Instagram</a></li>
-            <li>💻 <a href="https://www.facebook.com/hzhsg.gaha" target="_blank">Facebook</a></li>
-            <li>🐙 <a href="https://github.com/Leo-dave1051" target="_blank">GitHub</a></li>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+
+          <div class="skill-icon">&lt;/&gt;</div>
+
+          <h3>PROGRAMMING</h3>
+
+          <ul>
+            <li>Java</li>
+            <li>C</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <footer>© 2025 Leomar Dave U. Sumaga | Bachelor of Information Technology | Designed with passion and code.</footer>
+        </div>
+
+
+        <div class="skill-card">
+
+          <div class="skill-icon">▣</div>
+
+          <h3>DEVELOPMENT</h3>
+
+          <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Database Fundamentals</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+          </ul>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <div class="skill-icon">♟</div>
+
+          <h3>PROFESSIONAL</h3>
+
+          <ul>
+            <li>Problem Solving</li>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Adaptability</li>
+            <li>Technical Writing</li>
+          </ul>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <div class="skill-icon purple">◉</div>
+
+          <h3>CREATIVE</h3>
+
+          <ul>
+            <li>Graphic Design</li>
+            <li>Photo Editing</li>
+            <li>Video Editing</li>
+            <li>Content Creation</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="tab-content">
+
+      <div class="section-header">
+
+        <h2 class="page-title">
+          FEATURED <span>PROJECTS</span>
+        </h2>
+
+        <p>
+          Some of the projects I've worked on. More projects coming soon!
+        </p>
+
+      </div>
+
+
+      <div class="projects-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <article class="project-card">
+
+          <div class="project-image farm-image">
+            <span class="project-open">↗</span>
+          </div>
+
+          <div class="project-body">
+
+            <h3>Farm Tracker System</h3>
+
+            <p>
+              A system designed to help manage and monitor
+              farm-related information and activities.
+            </p>
+
+            <div class="technology-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+
+            <div class="project-buttons">
+              <a href="#" class="small-btn">View Project</a>
+              <a href="#" class="small-btn secondary">GitHub</a>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROJECT 2 -->
+
+        <article class="project-card">
+
+          <div class="project-image mindtrace-image">
+            <span class="project-open">↗</span>
+          </div>
+
+          <div class="project-body">
+
+            <h3>MindTrace</h3>
+
+            <p>
+              An interactive study reviewer designed for
+              students studying programming and technical subjects.
+            </p>
+
+            <div class="technology-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-buttons">
+              <a href="#" class="small-btn">View Project</a>
+              <a href="#" class="small-btn secondary">GitHub</a>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROJECT 3 -->
+
+        <article class="project-card">
+
+          <div class="project-image portfolio-image">
+            <span class="project-open">↗</span>
+          </div>
+
+          <div class="project-body">
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+              My personal portfolio website showcasing my
+              skills, projects, and experiences.
+            </p>
+
+            <div class="technology-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-buttons">
+              <a href="#" class="small-btn">View Project</a>
+              <a href="https://github.com/Leo-dave1051"
+                target="_blank"
+                class="small-btn secondary">
+                GitHub
+              </a>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATES ================= -->
+
+    <section id="certificates" class="tab-content">
+
+      <div class="section-header">
+
+        <h2 class="page-title">
+          <span>CERTIFICATES</span>
+        </h2>
+
+        <p>
+          A collection of certifications, workshops, and
+          training programs I've completed.
+        </p>
+
+      </div>
+
+
+      <div class="certificate-grid">
+
+
+        <article class="certificate-card">
+
+          <div class="certificate-image">
+            <img src="azure-certificate.jpg"
+                alt="Microsoft Azure Fundamentals Certificate">
+          </div>
+
+          <h3>Microsoft Azure Fundamentals</h3>
+
+          <p>Microsoft Learn</p>
+          <small>2026</small>
+
+          <a href="#" class="certificate-button">
+            View Certificate
+          </a>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <div class="certificate-image">
+            <img src="java-certificate.jpg"
+                alt="Java Programming Basics Certificate">
+          </div>
+
+          <h3>Java Programming Basics</h3>
+
+          <p>SoloLearn</p>
+          <small>2026</small>
+
+          <a href="#" class="certificate-button">
+            View Certificate
+          </a>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <div class="certificate-image">
+            <img src="uiux-certificate.jpg"
+                alt="UI UX Design Certificate">
+          </div>
+
+          <h3>UI/UX Design Fundamentals</h3>
+
+          <p>Coursera</p>
+          <small>2025</small>
+
+          <a href="#" class="certificate-button">
+            View Certificate
+          </a>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <div class="certificate-image">
+            <img src="web-certificate.jpg"
+                alt="Web Development Certificate">
+          </div>
+
+          <h3>Web Development Bootcamp</h3>
+
+          <p>freeCodeCamp</p>
+          <small>2025</small>
+
+          <a href="#" class="certificate-button">
+            View Certificate
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="tab-content">
+
+      <div class="education-layout">
+
+        <div>
+
+          <div class="section-badge">
+            ACADEMIC JOURNEY
+          </div>
+
+          <h2 class="page-title">
+            MY <span>EDUCATION</span>
+          </h2>
+
+          <div class="timeline">
+
+
+            <div class="timeline-item">
+
+              <div class="timeline-icon">◆</div>
+
+              <div class="timeline-content">
+
+                <h3>
+                  Bachelor of Science in Information Technology
+                </h3>
+
+                <p>
+                  Bukidnon State University
+                </p>
+
+                <span>
+                  2025 – Present
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+              <div class="timeline-icon">▣</div>
+
+              <div class="timeline-content">
+
+                <h3>
+                  Senior High School
+                </h3>
+
+                <p>
+                  Bukidnon National High School
+                </p>
+
+                <span>
+                  2023 – 2025
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+              <div class="timeline-icon">♙</div>
+
+              <div class="timeline-content">
+
+                <h3>
+                  Junior High School
+                </h3>
+
+                <p>
+                  Impasugong National High School
+                </p>
+
+                <span>
+                  2019 – 2023
+                </span>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="education-quote">
+
+          <p>
+            "The best way
+            <br>
+            to predict the future
+            <br>
+            is to create it."
+          </p>
+
+          <div class="code-decoration">
+            01010101<br>
+            10101010<br>
+            01100110
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section id="achievements" class="tab-content">
+
+      <div class="section-header">
+
+        <h2 class="page-title">
+          ACHIEVEMENTS <span>& ACTIVITIES</span>
+        </h2>
+
+        <p>
+          Some of my achievements, competitions, and involvement
+          in school and community activities.
+        </p>
+
+      </div>
+
+
+      <div class="achievement-grid">
+
+
+        <div class="achievement-card">
+
+          <div class="achievement-icon">♟</div>
+
+          <h3>ACADEMIC</h3>
+
+          <ul>
+            <li>Best Research Leader (HUMSS)</li>
+            <li>Departmental Honors / Dean's List</li>
+          </ul>
+
+        </div>
+
+
+        <div class="achievement-card">
+
+          <div class="achievement-icon">◆</div>
+
+          <h3>COMPETITIONS</h3>
+
+          <ul>
+            <li>Drum & Lyre Comp. Champion</li>
+            <li>Inter-school Player (Esports)</li>
+            <li>Inter-school Player (Chess)</li>
+            <li>Sweet and Short Play — 3rd Place</li>
+          </ul>
+
+        </div>
+
+
+        <div class="achievement-card">
+
+          <div class="achievement-icon">⚙</div>
+
+          <h3>TECHNOLOGY</h3>
+
+          <ul>
+            <li>DevCon AI Track Workshop</li>
+            <li>Farm Tracker System</li>
+          </ul>
+
+        </div>
+
+
+        <div class="achievement-card">
+
+          <div class="achievement-icon">♟</div>
+
+          <h3>LEADERSHIP & ORGANIZATIONS</h3>
+
+          <ul>
+            <li>SBO Volunteer / Event Support</li>
+            <li>College of Technology Events</li>
+            <li>Week of Welcoming Officer</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="tab-content">
+
+      <div class="contact-layout">
+
+        <div class="contact-intro">
+
+          <div class="section-badge">
+            CONTACT
+          </div>
+
+          <h2 class="page-title">
+            GET IN <span>TOUCH</span>
+          </h2>
+
+          <p>
+            Interested in working together,
+            collaborating on a project,
+            or just connecting?
+          </p>
+
+          <p>
+            Feel free to reach out!
+          </p>
+
+          <a
+            href="mailto:leomardavepogi@gmail.com"
+            class="btn btn-primary"
+          >
+            ✉ Send Email
+          </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              @
+            </div>
+
+            <div>
+              <small>Email</small>
+
+              <a href="mailto:leomardavepogi@gmail.com">
+                leomardavepogi@gmail.com
+              </a>
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              GH
+            </div>
+
+            <div>
+              <small>GitHub</small>
+
+              <a href="https://github.com/Leo-dave1051"
+                target="_blank">
+                github.com/Leo-dave1051
+              </a>
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              f
+            </div>
+
+            <div>
+              <small>Facebook</small>
+
+              <a href="https://www.facebook.com/hzhsg.gaha"
+                target="_blank">
+                facebook.com/hzhsg.gaha
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              ◎
+            </div>
+
+            <div>
+              <small>Instagram</small>
+
+              <a href="https://www.instagram.com/leo.mis_u/"
+                target="_blank">
+                @leo.mis_u
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Leomar Dave U. Sumaga |
+    BSIT Student | Bukidnon State University
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
 
   <script>
-    const tabs = document.querySelectorAll('.tab-content');
-    const navLinks = document.querySelectorAll('nav ul li a');
 
-    navLinks.forEach((link) => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetTab = link.getAttribute('data-tab');
-        tabs.forEach((tab) => tab.classList.remove('active'));
-        navLinks.forEach((l) => l.classList.remove('active'));
-        document.getElementById(targetTab).classList.add('active');
-        link.classList.add('active');
+    const tabs = document.querySelectorAll(".tab-content");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    function openTab(tabName) {
+
+      tabs.forEach(tab => {
+        tab.classList.remove("active");
       });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+      });
+
+      const target = document.getElementById(tabName);
+
+      if (target) {
+        target.classList.add("active");
+      }
+
+      const activeLink =
+        document.querySelector(
+          `.nav-links a[data-tab="${tabName}"]`
+        );
+
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+
+
+    navLinks.forEach(link => {
+
+      link.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        const tab = this.dataset.tab;
+
+        openTab(tab);
+
+      });
+
     });
 
-    // Slideshow functionality
-    const slides = document.querySelectorAll('.photo-oval img');
+
+    document.querySelectorAll("[data-tab-button]")
+      .forEach(button => {
+
+        button.addEventListener("click", function(e) {
+
+          e.preventDefault();
+
+          openTab(this.dataset.tabButton);
+
+        });
+
+      });
+
+
+    /* PROFILE SLIDESHOW */
+
+    const slides =
+      document.querySelectorAll(".profile-image img");
+
     let currentSlide = 0;
 
     function showSlide(index) {
+
       slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-          slide.classList.add('active');
-        }
+
+        slide.classList.toggle(
+          "active",
+          i === index
+        );
+
       });
+
     }
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
+    setInterval(() => {
+
+      currentSlide =
+        (currentSlide + 1) % slides.length;
+
       showSlide(currentSlide);
-    }
 
-    // Start slideshow
-    setInterval(nextSlide, 3000); 
+    }, 3500);
+
+
+    /* MOBILE MENU */
+
+    const menuButton =
+      document.querySelector(".menu-button");
+
+    const navMenu =
+      document.querySelector(".nav-links");
+
+    menuButton.addEventListener("click", () => {
+
+      navMenu.classList.toggle("mobile-open");
+
+    });
+
+
+    navLinks.forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navMenu.classList.remove("mobile-open");
+
+      });
+
+    });
+
   </script>
+
 </body>
+
 </html>
