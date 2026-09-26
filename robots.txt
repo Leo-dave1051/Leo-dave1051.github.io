@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leo-dave1051-github-io.vercel.app/sitemap.xml
